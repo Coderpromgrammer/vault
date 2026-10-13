@@ -4,9 +4,8 @@
     Purpose: Complete, interactive demonstration script exercising all Silverline components.
 ]=]
 
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local SilverlineModule = ReplicatedStorage:WaitForChild("Silverline")
-local Silverline = require(SilverlineModule)
+-- Load Silverline UI Framework via GitHub Loadstring
+local Silverline = loadstring(game:HttpGet("https://raw.githubusercontent.com/Coderpromgrammer/vault/main/bundle.lua"))()
 
 -- 1. Initialize Application
 local app = Silverline.new({
